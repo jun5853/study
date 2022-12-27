@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 700px;
+
+}
+th{border: 1px solid black;}
+td{border: 1px solid black; text-align: center;}
+
+#imgarea{
+    background-color: aquamarine;
+    width: 100px;
+    height: 150px;
+
+}
+
+img{
+    width: 100px;
+
+}
+
+.title{width: 500px;}
+
+span{font-size:x-large}
+
+
+.right{text-align: right; height: 100px;}
+.emty{height: 30px;}
