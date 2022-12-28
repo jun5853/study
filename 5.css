@@ -1,39 +1,36 @@
-@charset "UTF-8";
+@charset "utf-8";
 
+/* div화면 가운데 정렬 */
+div{
+    width: 700px;
+    height: 600px;
+    background-color: aliceblue;
+    margin: auto;
+}
 header{
-    width: 500px;
-    height: 150px;
-    background-color: darkcyan;
-}
-header h1{
-    float: left;
-    width: 200px;
+    width: 700px;
     height: 100px;
+    background-color: antiquewhite;
 }
-header ul li{float: left;}
-
-
-article{
-    width: 400px;
-    height: 150px;
+nav{
+    width: 200px;
+    height: 200px;
     background-color: aquamarine;
-    
+    float: left;
+    /* 옆으로 옮기는데 우두머리성질이라 다른것도 따라옴 */
 }
+
 section{
     width: 400px;
-    height: 250px;
+    height: 200px;
     background-color: brown;
-    
-}
-aside{
-    width: 400px;
-    height: 100px;
-    background-color: black
-
+    float: right;
 }
 
 footer{
-    width:400px ;
-    height: 40px;
-    background-color: chartreuse;
+    clear: both;
+    /* float의 성질 없애주는 성질 */
+    width: 700px;
+    height: 100px;
+    background-color: chocolate;
 }

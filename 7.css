@@ -1,0 +1,27 @@
+@charset "uft-8";
+
+/* div가운데 정렬 */
+
+.wrap{width: 800px; height: 400px; margin: auto;}
+.header{width: 800px; height: 100px; background-color: antiquewhite;}
+.logo{color: red;}
+
+/* nav */
+.nav{width: 150px; height: 200px; background-color: aquamarine; float: left;}
+
+.text{background-color: chocolate ;color: antiquewhite;}
+
+/* section */
+
+.section{width: 400px; height: 200px; background-color: palegoldenrod;
+float: right;}
+.title{text-align: center;color: red;}
+
+
+/* footer */
+footer{
+    clear: both;
+    width: 800px;
+    height: 100px;
+    background-color: bisque;
+}
