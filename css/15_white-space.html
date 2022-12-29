@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>white-space</title>
+    <style>
+        div{
+            width: 300px;
+            background-color: blanchedalmond;
+        }
+        .nowrap{white-space: nowrap;}
+        .pre{white-space: pre;}
+        .pre-lineP{white-space: pre-line;}
+        .pre-wrap{white-space: pre-wrap;}
+    </style>
+</head>
+<body>
+    <h4>white-space:normal</h4>
+    <div class="nomal">
+        공백을 여러개 넣어도 공백 1칸만 표시,영역이 작으면 자동으로 줄바꿈
+</div>
+        <h4>whte-space:nowrap</h4>
+        <div class="nowrap">
+            공백을 여러개 넣어도 공백 1칸만 표시
+            텍스트가 길어도 줄바꿈 되지 않고 같은 줄에 표시 (지정한 영역보다 넘치는 현상있음)
+
+        </div>
+    
+    <h4>white-space :pre</h4>
+    <div class="pre">
+        코드창에 있는 공백을          그대로 표시
+        코드창에 줄바꿈을 하면 그대로 표시,줄바꿈을 하지않으면 그대로 표시
+
+    </div>
+    <h4>white-space : pre-line</h4>
+    <div class="pre-line">
+        공백을 1칸만 표시,줄바꿈이 없어도 지정한 영역보다 내용이 많으면 자동 줄 바뀜이 됨
+    </div>
+    <h4>white-space : pre-wrap</h4>
+    <div class="pre-wrap">
+        코드창에 있는 공백을      그대로 표시
+    </div>
+
+</body>
+</html>
+
+<!-- 잘쓰진 않지만 있다는건 알아야 -->
