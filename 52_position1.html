@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        div{
+            width: 100px;height: 100px;
+            text-align: center; line-height: 100px;
+
+        }
+        #box1{background-color: palegoldenrod;}
+
+        /* ralative
+        :top, left,right,bottom값이 현재 위치한곳에서부터 이동 
+        :기준설정할때*/
+        #box2{background-color: palegreen;
+        position: relative;
+    top: 50px; left: 150px;}
+
+    /* absoute
+    :top, left, right , bottom값을 주면 최상위요소(body,html) 기준으로 이동 */
+        #box3{background-color: paleturquoise;
+            position: absolute;
+    top: 50px; left: 150px;}
+
+    /* fixed
+    : 최상위요소(body,html) 기준으로 이동 
+    :고정 
+    :메뉴상단, 햄버거버튼, 검정색배경, top등등*/
+        #box4{background-color: palevioletred;
+        position: fixed;
+        right: 0;
+        left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">static</div>
+    <div id="box2">relative</div>
+    <div id="box3">absoute</div>
+    <div id="box4">fixed</div>
+</body>
+</html>
