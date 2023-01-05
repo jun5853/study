@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bertical-align</title>
+    <style>
+        table{width: 400px;height: 600px; border: 1px solid red;
+        margin-bottom: 100px;}
+        table td{border: 1px solid red;}
+
+        /* 세로방향 정렬 */
+        #ver2{vertical-align: top;}
+        #ver3{vertical-align: middle;}
+        #ver4{vertical-align: bottom;}
+
+        div{width: 400px;height: 200px; border: 1px solid red; margin-top: 100px; display: table-cell; vertical-align: middle;}
+        /* display: table-cell로 인라인요소로 바꿔서 적용시킴 */
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td id="ver1">산토끼토기야 어디를 가느냐 깡총깡총 뛰면서 어디를 가느냐 산고개 고개를  나 혼자 넘어서 토실토실 알밤을 주워서 올테야</td>
+            <td id="ver2">산토끼토기야 어디를 가느냐 깡총깡총 뛰면서 어디를 가느냐 산고개 고개를  나 혼자 넘어서 토실토실 알밤을 주워서 올테야</td>
+        </tr>
+        <tr>
+            <td  id="ver3">산토끼토기야 어디를 가느냐 깡총깡총 뛰면서 어디를 가느냐 산고개 고개를  나 혼자 넘어서 토실토실 알밤을 주워서 올테야</td>
+            <td  id="ver4">산토끼토기야 어디를 가느냐 깡총깡총 뛰면서 어디를 가느냐 산고개 고개를  나 혼자 넘어서 토실토실 알밤을 주워서 올테야</td>
+        </tr>
+    </table>
+
+    <div>
+        산토끼토기야 어디를 가느냐 깡총깡총 뛰면서 어디를 가느냐 산고개 고개를  나 혼자 넘어서 토실토실 알밤을 주워서 올테야
+
+    </div>
+        
+</body>
+</html>
