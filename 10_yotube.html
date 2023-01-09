@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유투브 영상가져오기</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        #wrap{
+            position: relative;
+
+            /* 9 ÷ 16 × 100 = 56.25 */
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        #wrap iframe{
+            width: 100%;
+            max-width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
+</style>
+</head>
+<body>
+    <div id="wrap">
+        <iframe width="427" height="240" src="https://www.youtube.com/embed/_KIjaJjAxOI" title="≪스파이더맨: 톰홀랜드버스≫ 모든 스파이더맨 총집합ㄷㄷ 개쩌는 형들이 만든 스파이더맨: 에브리원스홈 예고편 및 비하인드씬 (팬 메이드)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</body>
+</html>

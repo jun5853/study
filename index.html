@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web</title>
+    <style>
+        *{margin: 0;padding: 0; color: #333;}
+        a{text-decoration: none;}
+        #wrap{width: 800px;margin: auto;}
+        
+        #wrap h1 a img{width: 400px; height: 300px;}
+        
+        ol li{margin: 10px;}
+
+
+
+        @media all and (min-width:320px){
+            body{background-color: yellow;}
+            #wrap{width: 70%; margin: auto; font-size: 2vw;}
+        }
+
+
+        @media all and (min-width:768px){
+            body{background-color: royalblue; width: 90%;}
+            #wrap{width: 80%; margin: auto;font-size: 1vw;}
+        }
+
+
+        @media all and (min-width:960px){
+            body{background-color: coral;}
+            #wrap{width: 90%; margin: auto; font-size: 0.5vw;}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>
+                <a href=""><img src="/img/Logo3.png" alt=""></a>
+            </h1>
+        </header>
+        <section>
+            <ol>
+                <li><a href="/1_grid-bagic.html"> 가변그리드맛보기</a></li>
+                <li><a href="/2_viewport-bagic.html"> 뷰포트맛보기</a></li>
+                <li><a href="/3_midiaquery-bagic.html">미디어쿼리 맛보기</a></li>
+                <li><a href="/4_grid.html">가변그리드제작</a></li>
+                <li><a href="/5_margin.html">가변마진제작</a></li>
+                <li><a href="/6_padding.html">가변패딩제작</a></li>
+                <li><a href="/7_calc.html">calc함수</a></li>
+                <li><a href="/8_vw_vh.html">vw와vh단위 글자크기조절</a></li>
+                <li><a href="/9_img_media.html">이미지 미디어 가변크기조절</a></li>
+                <li><a href="/10_yotube.html">유투브영상 가변크기 조절</a></li>
+            </ol>
+            
+        </section>
+    </div>
+</body>
+</html>
