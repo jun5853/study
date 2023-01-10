@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        h2{text-align: center;}
+        .wrap{
+            width: 220px; height: 300px; border: 1px solid #000;
+            margin: 0 auto 50px;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .wrap div{flex: 1;} /* 부모요소에 채워주는 속성 */
+        .wrap div:nth-child(1){background-color: yellow;}
+        .wrap div:nth-child(2){background-color: blue}
+        .wrap div:nth-child(3){background-color: red;}
+
+        .wrap1{align-items: stretch;}
+        .wrap2{align-items: flex-start;}
+        .wrap3{align-items: flex-end;}
+        .wrap4{align-items: center;}
+    </style>
+</head>
+<body>
+    <h2>stretch: 기본값</h2>
+    <div class="wrap wrap1 ">
+        <div>yellow</div>
+        <div>blue</div>
+        <div>red</div>
+    </div>
+    <h2> flex-start</h2>
+    <div class="wrap wrap2 ">
+        <div>yellow</div>
+        <div>blue</div>
+        <div>red</div>
+    </div>
+    <h2> flex-end</h2>
+    <div class="wrap wrap3 ">
+        <div>yellow</div>
+        <div>blue</div>
+        <div>red</div>
+    </div>
+    <h2> center</h2>
+    <div class="wrap wrap4 ">
+        <div>yellow</div>
+        <div>blue</div>
+        <div>red</div>
+    </div>
+</body>
+</html>
