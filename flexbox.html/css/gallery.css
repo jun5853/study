@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* mobile */
+body{background: pink;}
+
+/* tab */
+@media all and (min-width:768px){
+    body{background: palegoldenrod;}
+}
+
+
+/* pc */
+
+@media all and (min-width:960px){
+    body{background: palegreen;}
+}
