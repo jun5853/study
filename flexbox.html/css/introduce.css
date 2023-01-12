@@ -1,7 +1,7 @@
 @charset "UTF-8";
 *{box-sizing: border-box;}
 /* mobile */
-body{background: pink;}
+/* body{background: pink;} */
 #wrap{
   display: flex;flex-flow: column nowrap;
   width: 80%;margin: auto;max-width: 960px;
@@ -64,7 +64,7 @@ footer{order: 5;width: 100%;background: #474747;}
 footer p{padding: 20px;color: #fff;text-transform: uppercase;text-align: center;font-size: 2vw;}
 /* tab */
 @media all and (min-width:768px){
-    body{background: palegoldenrod;}
+    /* body{background: palegoldenrod;} */
      /* tab - header */
   header{flex-direction: row;}
   header h1{position: absolute;top: 0;left: 0;padding: 0; width: 15.625%;z-index: 10;}
@@ -77,7 +77,7 @@ footer p{padding: 20px;color: #fff;text-transform: uppercase;text-align: center;
 
   .content-section{padding: 40px;}
 
-
+footer p{padding: 40px;}
 } /* tab end*/
 
 
@@ -85,5 +85,44 @@ footer p{padding: 20px;color: #fff;text-transform: uppercase;text-align: center;
 /* pc */
 
 @media all and (min-width:960px){
-    body{background: palegreen;}
+    /* body{background: palegreen;} */
+    #wrap{width: 90%;position: relative;}
+
+    /* pc - 인포메이션 */
+    .info-section{position: absolute; top: 30px; right: 30px; z-index: 10; border-bottom: 0;width: auto;}
+    .info-section ul.info-list li{margin-left: 15px;}
+    .info-section ul.info-list li a{padding: 0; font-size: 2vw;}
+    
+    
+
+    /* pc - header area */
+    header{justify-content: flex-end;}
+    header h1{width: 12.5%;}
+    header nav{width: 87.5%;}
+    header nav ul{position: static; width: 100%;display: flex;}
+    header nav ul li{background: none; margin-left: 20px;}
+    header nav ul li a{width: auto;}
+    header nav ul li span{display: none;}
+    .menu-toggle-btn{display: none;}
+
+  /* pc - section */
+  /* 2행 */
+  .content-section div.content-row-2{display: flex; justify-content: space-between;}
+  .content-section div.content-row-2 article{margin-top: 0; width: 30%;}
+
+
+  /* 3행 */
+  .content-section .content-row-3 .para{display: flex; justify-content: space-between;}
+  .content-section .content-row-3 .para p{width: 48%;}
+
+
+
+  /* pc - footer */
+  footer p{text-align: left; font-size: 0.8vw;}
+
+
+
+
+
+
 }

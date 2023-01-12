@@ -14,7 +14,7 @@ background:transparent;
 body{
 font-family:NanumGothic,나눔고딕,'Nanum Gothic','맑은 고딕',HelveticaNeue,DroidSans,Sans-serif,Helvetica;
 line-height:1;
-/*배경이미지 넣기*/
+    background: url(../image/s_images/body_bg.png);
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{ 
