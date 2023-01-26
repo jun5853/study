@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질의 응답 적정체중 구하기</title>
+</head>
+<body>
+    <script>
+        //질의 응답
+        const userName = prompt('당신의 이름은?','');
+        const userHeight = prompt('당신의 신장은?', '');
+        const userWeight = prompt('당신의 몸무게는?', '');
+
+        //적정체중=(본인신장 - 100) * 0.9
+        const nomalWeght = (userHeight - 100) * 0.9;
+        // document.write(nomalWeght);
+
+        //적정체중 오차 ±5
+        let result = (userWeight >= nomalWeght - 5) && (userWeight <= nomalWeght + 5);
+
+        //적정체중입니다, 아닙니다 출력
+        //조건식 ? 참 : 거짓
+        result = (result) ? "적정체중입니다." : '적정체중이 아닙니다.';
+        document.write(userName + '님은 ' + result);
+    </script>
+</body>
+</html>

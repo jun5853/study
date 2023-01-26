@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 (수정)</title>
+    <link rel="stylesheet" href="./css/c02.css">
+</head>
+<body>
+    <h1>배열 (수정)</h1>
+    <div id="content">
+        <div class="message">
+            Colors : <span id="colors">색상을 찾을 수 없습니다. 선택해주세요!</span>
+        </div>
+    </div>
+
+    <script>
+        const colors = ['white', 'black', 'custom'];
+
+        //배열수정
+        colors[2] = 'beige';
+        console.log(colors);
+
+        const el = document.getElementById('colors')
+        el.innerHTML = colors[2];
+    </script>
+</body>
+</html>

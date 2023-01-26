@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열호출메서드</title>
+</head>
+<body>
+    <script>
+        const fruits = ['apple', 'banana', 'orange'];
+
+        //배열의 길이확인
+        console.log(fruits.length);
+
+        //배열의 끝에 새 값을 추가 : push
+        fruits.push('pear');
+        console.log(fruits);
+
+        //배열의 시작 위치에 새 값을 추가 : unshift
+        fruits.unshift('melon');
+        console.log(fruits);
+
+        //배열 끝에 값 하나를 제거 : pop
+        fruits.pop();
+        console.log(fruits);
+
+        //배열 시작 위치에 값 하나를 제거 : shift
+        fruits.shift();
+        console.log(fruits);
+
+    </script>
+</body>
+</html>

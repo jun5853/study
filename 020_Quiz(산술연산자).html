@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/c02.css">
+</head>
+<body>
+    <h1>Quiz(산술연산자)</h1>
+    <div id="content">
+        <div class="message number">
+            소계 : $ <span id="subtotal"></span>
+        </div>
+        <div class="message number">
+            배송비 : $ <span id="shipping"></span>
+        </div>
+        <div class="message number">
+            총계 : $ <span id="total"></span>
+        </div>
+    </div>
+
+    <script>
+        const subTotal = 14 * 5;
+
+        const shipping = 14 * 0.5;
+
+        const total = subTotal + shipping;
+
+        const elSub = document.getElementById('subtotal')
+        elSub.textContent = subTotal;
+
+        const elShipping = document.getElementById('shipping')
+        elShipping.textContent = shipping;
+
+        const elTotal = document.getElementById('total');
+        elTotal.textContent = total;
+
+        
+        
+
+
+        document.getElementById('total').textContent = subtotal1 + shipping2;
+    </script>
+</body>
+</html>

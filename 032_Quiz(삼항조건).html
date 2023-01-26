@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const now = new Date(); //일 반환함수
+        const todayHour = now.getHours();//시간 반환함수
+        const todayMinutes = now.getMinutes();//분 반환함수
+        
+        // document.write(greeting);
+
+        let greeting = (todayHour < 12) ? '오전' : '오후';
+
+        
+        
+        document.write('지금은' + greeting + todayHour + '시' + todayMinutes + '분 입니다.');
+    </script>
+</body>
+</html>
