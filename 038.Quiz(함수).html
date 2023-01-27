@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        #text-box{width: 500px; height: 40px; margin-bottom: 20px;}
+        p{display: inline;}
+        button{background: coral; color: #fff;border: none; width: 100px;height: 40px;border-radius: 10px;cursor: pointer;}
+        #display{border: 1px solid #000; width: 500px; height: 200px; margin: 20px 0; padding: 10px;}
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="text-box" placeholder="내용을 입력하세요.">
+    </div>
+
+    <p><button onclick="show1()">글 보여주기</button></p>
+    <p><button onclick="delete1()">글 삭제하기</button></p>
+
+    <div id="display"></div>
+
+
+    <script>
+        
+
+        function show1(){
+            const textBox = document.getElementById('text-box').value;
+            //value 인풋값을 보여주는기능
+            const innerBox = document.getElementById('display');
+            innerBox.innerHTML = textBox;
+        }
+
+
+        function delete1(){
+            const innerBox = document.getElementById('display').value;
+            innerBox.innerHTML = '';
+
+        }
+    </script>
+</body>
+</html>

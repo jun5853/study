@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수기본형식</title>
+    <link rel="stylesheet" href="./css/c03.css">
+</head>
+<body> //
+    <h1>함수 기본형식</h1>
+    <div id="message">
+        Welcome to our site!
+    </div>
+
+
+    <script>
+        const msg = '10%할인을 받으시려면 지금 회원 가입하세요!';
+
+        //함수선언
+        function showMessage(){
+            const el = document.getElementById('message');
+            el.textContent = msg
+        }
+
+        //함수호출
+        showMessage();
+
+        //함수 호출은 선언 전의 위치 또는 다음의 해도 적용가능!
+    </script>
+</body>
+</html>

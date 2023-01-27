@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>익명함수</title>
+</head>
+<body> //
+    <script>
+        const num1 = Number(prompt('첫 번째 수는?',''));
+        const num2 = Number(prompt('두 번째 수는?',''));
+
+        //익명함수
+        const addNumber = function(a, b){
+            const sum = a + b;
+            return document.write('두 수를 더한 값은' + sum + '입니다');
+        }
+
+        //호출
+        addNumber(num1,num2);
+    </script>
+</body>
+</html>
