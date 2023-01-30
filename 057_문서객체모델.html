@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서객체모델</title>
+    <link rel="stylesheet" href="./css/c03.css">
+</head>
+<body>
+    <h1>문서객체모델</h1>
+    <div id="footer"></div>
+
+    <script>
+        let msg = '<p><b>page title : </b>' + document.title + "<b>";
+            msg += "<b>page address : </b>" + document.URL + "<br>";
+            msg += "<b>last modified : </b>" + document.lastModified + "</p>";
+
+            const el = document.getElementById("footer");
+            el.innerHTML = msg;
+    </script>
+</body>
+</html>

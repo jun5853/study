@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d-day</title>
+</head>
+<body>
+    <script>
+        const today = new Date();
+        const nowYear = today.getFullYear();
+        const theDate = new Date(nowYear, 11 , 31);
+        
+        //남은 일수 (밀리초) = 특정 날짜 객체 - 현재 날짜 객체
+        const resultDate = theDate.getTime() - today.getTime();
+
+        //일단위롤 계산한 다음 오늘 날까지 포함시키기 위해 Mate.ceil 반올림
+        const result = Math.ceil(resultDate / (1000 * 60 * 60 * 24));
+
+        document.write('D-day : ' + result + '일 남았습니다.');
+    </script>
+</body>
+</html>

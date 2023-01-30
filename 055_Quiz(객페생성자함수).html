@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        div{border:  1px solid #000; width: 500px; height: 50px;padding: 20px;}
+    </style>
+</head>
+<body>
+    <h1>TV객체 메서드 호출</h1>
+    <div id="tv"></div>
+    <h1>CAR객체 메서드 호출</h1>
+    <div id="car"></div>
+
+
+    <script>
+        const tv = new Object();
+        tv.color = 'white';
+        tv.price = 300000;
+
+        const car = new Object();
+        car.color = 'black';
+        car.price = 3000000;
+
+        const elTV = document.getElementById('tv');
+        elTV.innerHTML = 'TV 색상 : ' + tv.color + '<br>'  + 'TV가격 : ' + tv.price;
+            
+        const elCAR = document.getElementById('car');
+        elCAR.innerHTML = 'CAR 색상 : ' + car.color + '<br>'  + 'CAR가격 : ' + car.price;
+                
+            
+
+        
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자정의객체</title>
+</head>
+<body>
+    <script>
+        const hotel = {
+            name : 'Lahan',
+            rooms : 40,
+            booked : 25,
+            gym : true,
+            roomType : ['트윈', '더블', '스위트'],
+            
+            checkAvail : function(){
+                return this.rooms - this.booked;
+            }
+
+        }
+
+        console.log(hotel.name);
+        console.log(hotel.rooms);
+        console.log(hotel.booked);
+        console.log(hotel.gym);
+        console.log(hotel.roomType[2]);
+        console.log(hotel.checkAvail());
+
+    </script>
+</body>
+</html>

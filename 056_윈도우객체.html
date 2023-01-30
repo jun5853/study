@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윈도우객체</title>
+    <link rel="stylesheet" href="./css/c03.css">
+</head>
+<body>
+    <div id="info"></div>
+
+
+    <script>
+        let msg = '<h2>browser winddow</h2><p>width: ' + window.innerWidth + '</p>';
+
+        msg += '<p>height: ' + window.innerHeight + '</p>';
+        msg += '<h2>history</h2><p>items: ' + window.history.length + '</p>';
+        msg += '<h2>screen</h2><p>width: ' + window.screen.width + '</p>';
+        msg += '<p>height: ' + window.screen.height + '</p>';
+
+        const el = document.getElementById('info');
+        el.innerHTML = msg;
+        alert('현재 페이지: ' + window.location);
+        
+    </script>
+</body>
+</html>

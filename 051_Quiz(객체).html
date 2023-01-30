@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz(객체)</title>
+    <style>
+        div{
+            width: 500px; padding: 10px;
+            border:  1px solid #ccc;
+            margin: 20px auto;
+            font-size: 20px; text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="display"></div>
+    <div id="price"></div>
+
+    <script>
+        const robot1 = {
+            Number: "123-23",
+            Name: 'Robot',
+            Price: 25000,
+            from: 'Korea',
+            all: 50,
+            sell: 40,
+            Rest : function(){
+                return this.all - this.sell;
+            },
+
+            totalPrice : function(){
+                return this.Price * this.sell;
+            },
+
+
+            
+        }
+
+        const elSell = document.getElementById('price');
+        elSell.innerHTML = robot1.Name + '총판매 금액은' + robot1.totalPrice() + "원 입니다.";
+
+        const eldisplay = document.getElementById('display');
+        eldisplay.innerHTML =robot1.Name + '제품은' + robot1.Rest() + '개 남아있습니다.';
+    </script>
+</body>
+</html>

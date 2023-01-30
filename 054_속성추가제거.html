@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성추가 제거</title>
+    <link rel="stylesheet" href="./css/c03.css">
+</head>
+<body>
+    <div id="info">
+        <h2>호텔시설</h2>
+        <div id="hotelName"></div>
+        <div>
+            <p id="pool">Pool</p>
+            <p id="gym">Gym</p>
+        </div>
+    </div>
+
+    <script>
+        const hotel = {
+            name: "Park",
+            rooms: 120,
+            booked: 77,
+        };
+
+        //추가
+        hotel.gym = true;
+        hotel.pool = false;
+
+        //삭제
+        delete hotel.booked;
+
+        const elName = document.getElementById("hotelName");
+        elName.innerHTML = hotel.name;
+
+        const elPool = document.getElementById("pool");
+        elPool.className = hotel.pool;
+        
+        const elGym = document.getElementById("gym");
+        elGym.className = hotel.gym;
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+    <link rel="stylesheet" href="./css/c03.css">
+</head>
+<body>
+    <div id="info"></div>
+
+    <script>
+        const originalNumber = 10.23456;
+
+        let msg = "<h2>원래 숫자</h2><p>" + originalNumber + "</p>";
+        msg +="<h2>소수점 반올림 : 3</h2><p>" + originalNumber.toFixed(3) + "</p>";
+        msg +="<h2>3자리 반올림</h2><p>" + originalNumber.toPrecision(3) + "</p>";
+
+        const el = document.getElementById("info");
+        el.innerHTML = msg;
+    </script>
+</body>
+</html>
