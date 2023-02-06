@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #span{width: 50%; height: 30px;
+            border: 1px solid red;}
+            span.myspan{display: block; width: 500px; height: 50px; position: absolute; right: 10%; top: 10%;}
+    </style>
+</head>
+<body>
+    <h1>안녕하세요!!!</h1>
+    <p id="result">여기에다가 출력을!!!</p><span id="span" class="myspan">날짜표기</span>
+    <h2>안녕하세요!!</h2>
+
+    <h2>호텔 남은 객실 수 출력</h2>
+    <div id="hotelRooms"></div>
+
+    <script>
+
+        var 이름 = prompt("이름을 입력하세요!!!");
+        let 오늘날짜현재시간 = new Date().toLocaleString(); //데이트객체 생성
+
+        //var 이름 = "김민수입니다";
+        //console.log(이름);
+        //document.write(이름);
+        // document.getElementById("result").innerText=이름;
+        // document.getElementById("span").innerHTML="현재시간 :" + 오늘날짜현재시간; 
+    </script>
+    <script>
+        //오브젝트 자료형 만들고 함수작성하기
+        var 오브젝트 = {
+            data:"KIM",
+            간지나는함수 :function(){
+                console.log("함수실행");
+            }
+        }
+    </script>
+
+    <script>
+        const hotel = { //객체를 만드는 축약식 표현
+            name : "jun", //속성값
+            rooms : 100,
+            booked : 41,
+
+        roomVancy : function(){
+            // console.log(this);
+            var freeRooms;//null 값 지역변수
+            freeRooms = this.rooms  - this.booked;
+            return freeRooms;
+        }
+    }
+        document.getElementById("hotelRooms").innerHTML = hotel.name + "</br>"  
+        document.getElementById("hotelRooms").innerHTML +="남은방의갯수" + hotel.roomVancy() + "객실";  
+            
+        
+    </script>
+</body>
+</html>

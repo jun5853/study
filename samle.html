@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>안녕하세요!!!</h1>
+
+    <script>
+        // 재선언O, 재 할당O
+        //var name = prompt("이름을 입력하세요");
+        var name ="KIM"; //전역변수
+        var name ="Min";
+        var name =parseInt('555.9');
+
+        // 재선언X, 재할당O
+        let price=1000;
+        // let price=5000;
+        // 재선언X, 재할당X
+        const vat = 400 *0.1;
+        // console.log(vat);
+        // const vat;
+
+        function 간지나는함수(){
+            console.log(vat); //변수의범위 지역변수
+        }
+
+        if(1!=5){ // not eaqual
+            let 이름 ="KIM";
+            console.log(이름);
+
+        }
+
+        else{
+            console.log("숫자가다릅니다!!");
+        }
+
+    </script>
+</body>
+</html>
