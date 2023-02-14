@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트슬라이드</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        *{margin: 0 auto; box-sizing: border-box;}
+        .slider-container{width: 300vw; height: 400px; position: relative; /* margin left:-200vw */
+        transition: all 1s;
+        
+        }   
+        /* transform: translateX(-200vw); */
+        div.slide-box{width: 100vw;float: left; }
+        .slider-box img{width: 100%; height: auto;}
+    </style>
+</head>
+<body>
+    <h1>자바스트립트슬라이드</h1>
+    <div style="overflow: hidden;">
+    <section class="slider-container">
+    <div class="slide-box">
+        <img src="./img/bride-gc518f058c_1920.jpg" alt="">
+    </div>
+    <div class="slide-box">
+        <img src="./img/city-g411267073_1920.jpg" alt="">
+    </div>
+    <div class="slide-box">
+        <img src="./img/city-g5a5bcfa6e_1920.jpg" alt="">
+    </div>
+    <div class="slide-box">
+        <img src="./img/couple-g176931e4b_1920.jpg" alt="">
+    </div>
+    <div class="slide-box">
+        <img src="./img/horse-g6956e081c_1920.jpg" alt="">
+    </div>
+    <div class="slide-box">
+        <img src="./img/korea-gddf0b55a5_1920.jpg" alt="">
+    </div></section>
+    <button class="slide-1">1</button>
+    <button class="slide-2">2</button>
+    <button class="slide-3">3</button>
+    <button class="next">다음</button>
+</div>
+
+
+<script>
+    $(function(){
+        $(".slide-2").on("click",function(){
+            $('section.slider-container').css('transform','translateX(-100vw)');
+        })
+        $(".slide-3").on("click",function(){
+            $('section.slider-container').css('transform','translateX(-200vw)');
+        })
+        $(".slide-1").on("click",function(){
+            $('section.slider-container').css('transform','translateX(0vw)');
+        })
+
+        //다음버튼 누르면 지금 보이는 사진이1이면 2번으로 보여지고 2번이면 3번으로
+        var 현재보여지는사진 =1;
+        $(".next").on("click",function(){
+            // if(현재보여지는사진 == 1){
+            //     $('section.slider-container').css('transform','translateX(-100vw)');
+            //     현재보여지는사진+=1;
+            // } else if(현재보여지는사진 == 2){
+            //     $('section.slider-container').css('transform','translateX(-200vw)');
+            // } else if(현재보여지는사진 == 3){
+            //     $('section.slider-container').css('transform','translateX(0vw)');
+            //     현재보여지는사진+=1;
+            // }
+            $('section.slider-container').css('transform','translateX(-' +현재보여지는사진+ '00vw)');
+            현재보여지는사진+=1;
+        })
+    })
+</script>
+</body>
+</html>

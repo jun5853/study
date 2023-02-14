@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트슬라이드</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        *{margin: 0 auto; box-sizing: border-box;}
+        .slider-container{width: 300vw; height: 400px; position: relative; /* margin left:-200vw */
+        transition: all 1s;
+        
+        }   
+        /* transform: translateX(-200vw); */
+        div.slide-box{width: 100vw;float: left; }
+        .slider-box img{width: 100%; height: auto;}
+    </style>
+</head>
+<body>
+    <h1>자바스트립트슬라이드</h1>
+    <div style="overflow: hidden;">
+    <section class="slider-container">
+    <div class="slide-box">
+        <img src="./img/bride-gc518f058c_1920.jpg" alt="">
+    </div>
+    <div class="slide-box">
+        <img src="./img/city-g411267073_1920.jpg" alt="">
+    </div>
+    <div class="slide-box">
+        <img src="./img/city-g5a5bcfa6e_1920.jpg" alt="">
+    </div>
+    </section>
+    <button class="slide-1">1</button>
+    <button class="slide-2">2</button>
+    <button class="slide-3">3</button>
+    <button class="next">다음</button>
+</div>
+
+
+<script>
+    $(function(){
+        var 현재이미지 = 0;
+        // setInterval(function(){
+        //     if(현재이미지<2){
+        //         현재이미지++;
+        //     }else{
+        //         현재이미지=0
+        //     }
+        //     var slidePosition=현재이미지 *(-2005) + "px";
+        //     $(".slider-container").animate({left:slidePosition},400)
+        // },3000)
+        setInterval(slideAuto,3000);
+      function slideAuto(){
+        if(현재이미지<2){
+        현재이미지++;
+       }else{
+        현재이미지=0
+       }
+       var slidePosition =현재이미지 *(-1005) +"px";
+       $(".sliderList").animate({left:slidePosition},400);
+    }
+    });
+</script>
+</body>
+</html>
