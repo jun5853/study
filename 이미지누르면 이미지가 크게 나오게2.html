@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./img/couple-g176931e4b_1920.jpg" alt="">
+    <script>
+        // // 그림바꾸기
+        // var changePic = document.querySelector("#myPic");
+        // changePic.addEventListener("click", function(){ //익명함수
+        //     changePic.src = "./img/couple-g176931e4b_1920.jpg";
+        // })
+
+        changePic.addEventListener("click", changePic, false);
+        changePic.addEventListener("mouseout", originPic, false);
+        function changePic(){
+            //그림 바꾸기 코드 실행
+            changePic.src = "./img/couple-g176931e4b_1920.jpg";
+        }
+
+        function originPic(){
+            changePic.src = "./img/couple-af.jpg";
+        }
+    </script>
+</body>
+</html>
