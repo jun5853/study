@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>수학객체</title>
+  <link rel="stylesheet" href="css/product.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <style>
+    *{margin: 0;padding:0;box-sizing: border-box;}
+
+section.photoLay
+{
+  position:relative; 
+  width:1000px;
+  height:auto;
+  border:1px solid red;
+  margin: 15px auto;
+  margin: 0 auto;
+  padding: 15px;;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width:22%;
+  display:inline-block;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.photo {
+  padding: 8px 16px;
+  line-height: 1.8;
+}
+  </style>
+</head>
+<body>
+  <h2>자바스크립트활용레이아웃만들기</h2>
+<section class="photoLay">
+  <div class="card">
+    <!-- <img src="https://via.placeholder.com/600" class="w-100"> -->
+    <img src="./images/thumbnails/a.jpg" alt="Avatar" style="width:100%">
+    <div class="photo">
+      <h4> 제주포토1</h4> 
+      <p>가격 :70000</p>
+      <p>촬영일자:2010년10월10일</p>
+      <button class="button">주문하기</button>      
+    </div>
+  </div><!-- 카드의끝 --> 
+  <div class="card">
+    <!-- <img src="https://via.placeholder.com/210" class="w-100"> -->
+     <img src="./images/thumbnails/b.jpg" alt="Avatar" style="width:100%">
+    <div class="photo">
+      <h4><b>제주포토1</b> </h4> 
+      <p>가격 :70000</p>
+      <p>촬영일자:2010년10월10일</p>
+      <button class="button">주문하기</button>      
+    </div>
+  </div><!-- 카드의끝 --> 
+ 
+</section>
+<div id="test">
+  <h6>아무데나,,,,,,</h6>
+
+</div>
+  
+</body>
+<script>
+/*   var a = document.createElement('p');
+      a.innerHTML ="나는 문단 태그에요";
+  document.querySelector("#test").appendChild(a); */
+
+  /* var aa = "<p>나는문단</p>";
+  //document.querySelector("#test").insertAdjacentHTML('beforeend', aa);
+  $("#test").prepend(aa); *///선택한 코드의 맨 밑에 추가하라는 것
+
+
+</script>
+<script>
+ // 데이터바인딩
+ var products =[
+  {id:0, price:80000, title:'제주핫플레이스1'},
+  {id:1, price:78000, title:'jeju_photo1'},
+  {id:2, price:88000, title:'jeju_photo2'},
+  {id:3, price:95000, title:'jeju_photo3'}
+
+ ];  //서버에서 이런 형식으로 데이터를 제공한다고 가정
+ var today = new Date().toLocaleTimeString();
+ console.log(products);
+ console.log(products[0]);
+ document.querySelectorAll('.photo h4')[0].innerHTML =products[0].title; 
+ document.querySelectorAll('.photo p:nth-of-type(1)')[0].innerHTML ="가격 :" +products[0].price; 
+ document.querySelectorAll('.photo p:nth-of-type(2)')[0].innerHTML="촬영일자 :" + today;
+
+</script>
+<script>
+    var a = '안녕';
+        console.log('문자' + a + '문자');  // '문자안녕문자'출력됨
+
+        var a = '안녕';
+        console.log(`문자${a}문자`);  // '문자안녕문자'출력됨  백틱기호활용  엔터키 활용 무방
+
+
+    var pants =[22,33,44,55,66]
+
+ /*      else if(value=='바지'){
+
+        $('.form-select').eq(1).removeClass('form-hide');
+        $('.form-select').eq(1).html('');
+        var 바지템플릿=`<option>28</option><option>30</option><option>32</option>`;
+        $('.form-select').eq(1).append(바지템플릿)
+
+      } */
+   pants.forEach(function(a){
+    /* console.log(a);
+    console.log(i); */
+    $("#test").append(`<option>${a}</option>`);
+
+   })
+
+   var obj ={name:"KIM", age:100}
+   for(var key in obj){
+     console.log(key);
+   }
+
+</script>
+</html>
